@@ -6,7 +6,7 @@
 - Tenant scoping on portal reads/writes (`orgId` derived from the token).
 - Password hashing with bcrypt (12 rounds).
 - Admin routes protected by role guard (`owner`, `admin`, `ops`).
-- CORS allow-list for the two frontends.
+- CORS reflects any browser origin for the demo (`origin: true`), including localhost, LAN IPs and preview hosts; restrict this allow-list before production.
 - Validation pipe and Mongoose schema typing.
 - No secrets committed; `.env.example` only.
 - Report calculations carry inputs and method in the stored record.
